@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "de_projektarbeit_hs_2026_zhaw"
+version = "0.1.0"
+description = "Projektarbeit für das Modul Data Engineering"
+readme = "README.md"
+requires-python = ">=3.10"
