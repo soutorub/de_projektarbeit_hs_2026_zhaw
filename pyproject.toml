@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "de-projekt"
+version = "0.1.0"
+description = "Projektarbeit für das Modul Data Engineering (ZHAW, HS26)"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Ruben Souto" },
+    { name = "Issa Fawaz" },
+    { name = "Drin Muslija" },
+]
+dependencies = ["numpy", "pandas", "matplotlib", "seaborn"]
+
+[project.optional-dependencies]
+dev = ["jupyterlab", "pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
