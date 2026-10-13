@@ -1,0 +1,3 @@
+# Rohdaten und Herkunftsberichte werden bytegenau gehasht.
+# Git darf beim Commit/Checkout keine Zeilenenden dieser Artefakte ändern.
+data/** -text whitespace=cr-at-eol

@@ -1,0 +1,129 @@
+﻿{
+    "retrieved_at":  "2026-10-13T14:07:54.9420300Z",
+    "source_url":  "https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte",
+    "download_url":  "https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte/download/RoadTrafficAccidentLocations.csv",
+    "file_name":  "RoadTrafficAccidentLocations.csv",
+    "bytes":  38710929,
+    "sha256":  "DF426E859FECD37CD7365F273662459688B1862482957960402696E8722D766F",
+    "rows":  70767,
+    "columns":  [
+                    "AccidentUID",
+                    "AccidentType",
+                    "AccidentType_de",
+                    "AccidentType_fr",
+                    "AccidentType_it",
+                    "AccidentType_en",
+                    "AccidentSeverityCategory",
+                    "AccidentSeverityCategory_de",
+                    "AccidentSeverityCategory_fr",
+                    "AccidentSeverityCategory_it",
+                    "AccidentSeverityCategory_en",
+                    "AccidentInvolvingPedestrian",
+                    "AccidentInvolvingBicycle",
+                    "AccidentInvolvingMotorcycle",
+                    "RoadType",
+                    "RoadType_de",
+                    "RoadType_fr",
+                    "RoadType_it",
+                    "RoadType_en",
+                    "AccidentLocation_CHLV95_E",
+                    "AccidentLocation_CHLV95_N",
+                    "CantonCode",
+                    "MunicipalityCode",
+                    "AccidentYear",
+                    "AccidentMonth",
+                    "AccidentMonth_de",
+                    "AccidentMonth_fr",
+                    "AccidentMonth_it",
+                    "AccidentMonth_en",
+                    "AccidentWeekDay",
+                    "AccidentWeekDay_de",
+                    "AccidentWeekDay_fr",
+                    "AccidentWeekDay_it",
+                    "AccidentWeekDay_en",
+                    "AccidentHour",
+                    "AccidentHour_text"
+                ],
+    "unique_accident_ids":  70767,
+    "years":  [
+                  {
+                      "year":  "2011",
+                      "count":  3420
+                  },
+                  {
+                      "year":  "2012",
+                      "count":  3251
+                  },
+                  {
+                      "year":  "2013",
+                      "count":  3375
+                  },
+                  {
+                      "year":  "2014",
+                      "count":  3293
+                  },
+                  {
+                      "year":  "2015",
+                      "count":  4529
+                  },
+                  {
+                      "year":  "2016",
+                      "count":  5556
+                  },
+                  {
+                      "year":  "2017",
+                      "count":  5548
+                  },
+                  {
+                      "year":  "2018",
+                      "count":  5677
+                  },
+                  {
+                      "year":  "2019",
+                      "count":  5528
+                  },
+                  {
+                      "year":  "2020",
+                      "count":  5039
+                  },
+                  {
+                      "year":  "2021",
+                      "count":  5151
+                  },
+                  {
+                      "year":  "2022",
+                      "count":  5459
+                  },
+                  {
+                      "year":  "2023",
+                      "count":  5234
+                  },
+                  {
+                      "year":  "2024",
+                      "count":  4993
+                  },
+                  {
+                      "year":  "2025",
+                      "count":  4714
+                  }
+              ],
+    "severity":  [
+                     {
+                         "category":  "as4, Unfall mit Sachschaden",
+                         "count":  52603
+                     },
+                     {
+                         "category":  "as3, Unfall mit Leichtverletzten",
+                         "count":  15167
+                     },
+                     {
+                         "category":  "as2, Unfall mit Schwerverletzten",
+                         "count":  2897
+                     },
+                     {
+                         "category":  "as1, Unfall mit Getöteten",
+                         "count":  100
+                     }
+                 ],
+    "property_damage_with_bicycle_true":  1612
+}

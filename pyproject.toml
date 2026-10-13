@@ -13,7 +13,7 @@ authors = [
     { name = "Issa Fawaz" },
     { name = "Drin Muslija" },
 ]
-dependencies = ["numpy", "pandas", "matplotlib", "seaborn"]
+dependencies = ["numpy", "pandas", "matplotlib", "seaborn", "scipy>=1.15"]
 
 [project.optional-dependencies]
 dev = ["jupyterlab", "pytest", "ruff"]
@@ -21,8 +21,12 @@ dev = ["jupyterlab", "pytest", "ruff"]
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+de_projekt = ["schema.sql"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["src"]
 
 [tool.ruff]
 line-length = 100

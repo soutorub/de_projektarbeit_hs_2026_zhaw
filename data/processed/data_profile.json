@@ -1,0 +1,1219 @@
+{
+  "generated_at": "2026-10-13T15:03:56.263219+00:00",
+  "source_sha256": "DF426E859FECD37CD7365F273662459688B1862482957960402696E8722D766F",
+  "source_url": "https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte",
+  "rows": 70767,
+  "columns": 36,
+  "versions": {
+    "python": "3.14.3",
+    "pandas": "3.0.6"
+  },
+  "column_inventory": [
+    {
+      "column": "AccidentUID",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 70767
+    },
+    {
+      "column": "AccidentType",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 11
+    },
+    {
+      "column": "AccidentType_de",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 11
+    },
+    {
+      "column": "AccidentType_fr",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 11
+    },
+    {
+      "column": "AccidentType_it",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 11
+    },
+    {
+      "column": "AccidentType_en",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 11
+    },
+    {
+      "column": "AccidentSeverityCategory",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 4
+    },
+    {
+      "column": "AccidentSeverityCategory_de",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 4
+    },
+    {
+      "column": "AccidentSeverityCategory_fr",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 4
+    },
+    {
+      "column": "AccidentSeverityCategory_it",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 4
+    },
+    {
+      "column": "AccidentSeverityCategory_en",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 4
+    },
+    {
+      "column": "AccidentInvolvingPedestrian",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 2
+    },
+    {
+      "column": "AccidentInvolvingBicycle",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 2
+    },
+    {
+      "column": "AccidentInvolvingMotorcycle",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 2
+    },
+    {
+      "column": "RoadType",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 3
+    },
+    {
+      "column": "RoadType_de",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 3
+    },
+    {
+      "column": "RoadType_fr",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 3
+    },
+    {
+      "column": "RoadType_it",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 3
+    },
+    {
+      "column": "RoadType_en",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 3
+    },
+    {
+      "column": "AccidentLocation_CHLV95_E",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 9018
+    },
+    {
+      "column": "AccidentLocation_CHLV95_N",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 10134
+    },
+    {
+      "column": "CantonCode",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 1
+    },
+    {
+      "column": "MunicipalityCode",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 1
+    },
+    {
+      "column": "AccidentYear",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 15
+    },
+    {
+      "column": "AccidentMonth",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 12
+    },
+    {
+      "column": "AccidentMonth_de",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 12
+    },
+    {
+      "column": "AccidentMonth_fr",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 12
+    },
+    {
+      "column": "AccidentMonth_it",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 12
+    },
+    {
+      "column": "AccidentMonth_en",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 12
+    },
+    {
+      "column": "AccidentWeekDay",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 7
+    },
+    {
+      "column": "AccidentWeekDay_de",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 7
+    },
+    {
+      "column": "AccidentWeekDay_fr",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 7
+    },
+    {
+      "column": "AccidentWeekDay_it",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 7
+    },
+    {
+      "column": "AccidentWeekDay_en",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 7
+    },
+    {
+      "column": "AccidentHour",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 24
+    },
+    {
+      "column": "AccidentHour_text",
+      "dtype_gelesen": "string",
+      "fehlend": 0,
+      "moegliche_na_marker": 0,
+      "rand_leerzeichen": 0,
+      "verschiedene_werte": 24
+    }
+  ],
+  "duplicate_rows": 0,
+  "duplicate_ids": 0,
+  "empty_ids": 0,
+  "invalid_id_format": 0,
+  "numeric_checks": [
+    {
+      "column": "AccidentYear",
+      "min": 2011.0,
+      "max": 2025.0,
+      "non_numeric_nonempty": 0,
+      "missing": 0,
+      "non_integer": 0,
+      "outside_expected_range": 0
+    },
+    {
+      "column": "AccidentMonth",
+      "min": 1.0,
+      "max": 12.0,
+      "non_numeric_nonempty": 0,
+      "missing": 0,
+      "non_integer": 0,
+      "outside_expected_range": 0
+    },
+    {
+      "column": "AccidentHour",
+      "min": 0.0,
+      "max": 23.0,
+      "non_numeric_nonempty": 0,
+      "missing": 0,
+      "non_integer": 0,
+      "outside_expected_range": 0
+    },
+    {
+      "column": "AccidentLocation_CHLV95_E",
+      "min": 2677442.0,
+      "max": 2689354.0,
+      "non_numeric_nonempty": 0,
+      "missing": 0,
+      "non_integer": 0
+    },
+    {
+      "column": "AccidentLocation_CHLV95_N",
+      "min": 1241844.0,
+      "max": 1254145.0,
+      "non_numeric_nonempty": 0,
+      "missing": 0,
+      "non_integer": 0
+    }
+  ],
+  "spatial_codes": {
+    "CantonCode": {
+      "ZH": 70767
+    },
+    "MunicipalityCode": {
+      "0261": 70767
+    }
+  },
+  "categories": {
+    "AccidentType": [
+      {
+        "AccidentType": "at0",
+        "AccidentType_de": "Schleuder- oder Selbstunfall",
+        "count": 18166
+      },
+      {
+        "AccidentType": "at00",
+        "AccidentType_de": "Andere",
+        "count": 667
+      },
+      {
+        "AccidentType": "at1",
+        "AccidentType_de": "Überholunfall oder Fahrstreifenwechsel",
+        "count": 8454
+      },
+      {
+        "AccidentType": "at2",
+        "AccidentType_de": "Auffahrunfall",
+        "count": 11246
+      },
+      {
+        "AccidentType": "at3",
+        "AccidentType_de": "Abbiegeunfall",
+        "count": 4166
+      },
+      {
+        "AccidentType": "at4",
+        "AccidentType_de": "Einbiegeunfall",
+        "count": 3496
+      },
+      {
+        "AccidentType": "at5",
+        "AccidentType_de": "Überqueren der Fahrbahn",
+        "count": 2891
+      },
+      {
+        "AccidentType": "at6",
+        "AccidentType_de": "Frontalkollision",
+        "count": 1070
+      },
+      {
+        "AccidentType": "at7",
+        "AccidentType_de": "Parkierunfall",
+        "count": 17007
+      },
+      {
+        "AccidentType": "at8",
+        "AccidentType_de": "Fussgängerunfall",
+        "count": 3282
+      },
+      {
+        "AccidentType": "at9",
+        "AccidentType_de": "Tierunfall",
+        "count": 322
+      }
+    ],
+    "AccidentSeverityCategory": [
+      {
+        "AccidentSeverityCategory": "as1",
+        "AccidentSeverityCategory_de": "Unfall mit Getöteten",
+        "count": 100
+      },
+      {
+        "AccidentSeverityCategory": "as2",
+        "AccidentSeverityCategory_de": "Unfall mit Schwerverletzten",
+        "count": 2897
+      },
+      {
+        "AccidentSeverityCategory": "as3",
+        "AccidentSeverityCategory_de": "Unfall mit Leichtverletzten",
+        "count": 15167
+      },
+      {
+        "AccidentSeverityCategory": "as4",
+        "AccidentSeverityCategory_de": "Unfall mit Sachschaden",
+        "count": 52603
+      }
+    ],
+    "RoadType": [
+      {
+        "RoadType": "rt432",
+        "RoadType_de": "Hauptstrasse",
+        "count": 17932
+      },
+      {
+        "RoadType": "rt433",
+        "RoadType_de": "Nebenstrasse",
+        "count": 48888
+      },
+      {
+        "RoadType": "rt439",
+        "RoadType_de": "andere",
+        "count": 3947
+      }
+    ],
+    "AccidentWeekDay": [
+      {
+        "AccidentWeekDay": "aw401",
+        "AccidentWeekDay_de": "Montag",
+        "count": 9969
+      },
+      {
+        "AccidentWeekDay": "aw402",
+        "AccidentWeekDay_de": "Dienstag",
+        "count": 10601
+      },
+      {
+        "AccidentWeekDay": "aw403",
+        "AccidentWeekDay_de": "Mittwoch",
+        "count": 11170
+      },
+      {
+        "AccidentWeekDay": "aw404",
+        "AccidentWeekDay_de": "Donnerstag",
+        "count": 10842
+      },
+      {
+        "AccidentWeekDay": "aw405",
+        "AccidentWeekDay_de": "Freitag",
+        "count": 11767
+      },
+      {
+        "AccidentWeekDay": "aw406",
+        "AccidentWeekDay_de": "Samstag",
+        "count": 9506
+      },
+      {
+        "AccidentWeekDay": "aw407",
+        "AccidentWeekDay_de": "Sonntag",
+        "count": 6912
+      }
+    ],
+    "AccidentMonth": [
+      {
+        "AccidentMonth": "1",
+        "AccidentMonth_de": "Januar",
+        "count": 4891
+      },
+      {
+        "AccidentMonth": "10",
+        "AccidentMonth_de": "Oktober",
+        "count": 6353
+      },
+      {
+        "AccidentMonth": "11",
+        "AccidentMonth_de": "November",
+        "count": 6045
+      },
+      {
+        "AccidentMonth": "12",
+        "AccidentMonth_de": "Dezember",
+        "count": 5218
+      },
+      {
+        "AccidentMonth": "2",
+        "AccidentMonth_de": "Februar",
+        "count": 4636
+      },
+      {
+        "AccidentMonth": "3",
+        "AccidentMonth_de": "März",
+        "count": 5776
+      },
+      {
+        "AccidentMonth": "4",
+        "AccidentMonth_de": "April",
+        "count": 5643
+      },
+      {
+        "AccidentMonth": "5",
+        "AccidentMonth_de": "Mai",
+        "count": 6282
+      },
+      {
+        "AccidentMonth": "6",
+        "AccidentMonth_de": "Juni",
+        "count": 6835
+      },
+      {
+        "AccidentMonth": "7",
+        "AccidentMonth_de": "Juli",
+        "count": 6504
+      },
+      {
+        "AccidentMonth": "8",
+        "AccidentMonth_de": "August",
+        "count": 6268
+      },
+      {
+        "AccidentMonth": "9",
+        "AccidentMonth_de": "September",
+        "count": 6316
+      }
+    ],
+    "AccidentHour": [
+      {
+        "AccidentHour": "00",
+        "count": 1197
+      },
+      {
+        "AccidentHour": "01",
+        "count": 822
+      },
+      {
+        "AccidentHour": "02",
+        "count": 661
+      },
+      {
+        "AccidentHour": "03",
+        "count": 494
+      },
+      {
+        "AccidentHour": "04",
+        "count": 527
+      },
+      {
+        "AccidentHour": "05",
+        "count": 720
+      },
+      {
+        "AccidentHour": "06",
+        "count": 1527
+      },
+      {
+        "AccidentHour": "07",
+        "count": 3118
+      },
+      {
+        "AccidentHour": "08",
+        "count": 4143
+      },
+      {
+        "AccidentHour": "09",
+        "count": 3724
+      },
+      {
+        "AccidentHour": "10",
+        "count": 4045
+      },
+      {
+        "AccidentHour": "11",
+        "count": 4231
+      },
+      {
+        "AccidentHour": "12",
+        "count": 4336
+      },
+      {
+        "AccidentHour": "13",
+        "count": 4358
+      },
+      {
+        "AccidentHour": "14",
+        "count": 4796
+      },
+      {
+        "AccidentHour": "15",
+        "count": 4750
+      },
+      {
+        "AccidentHour": "16",
+        "count": 5388
+      },
+      {
+        "AccidentHour": "17",
+        "count": 5575
+      },
+      {
+        "AccidentHour": "18",
+        "count": 5000
+      },
+      {
+        "AccidentHour": "19",
+        "count": 3561
+      },
+      {
+        "AccidentHour": "20",
+        "count": 2470
+      },
+      {
+        "AccidentHour": "21",
+        "count": 1987
+      },
+      {
+        "AccidentHour": "22",
+        "count": 1862
+      },
+      {
+        "AccidentHour": "23",
+        "count": 1475
+      }
+    ]
+  },
+  "inconsistent_code_labels": {
+    "AccidentType": {},
+    "AccidentSeverityCategory": {},
+    "RoadType": {},
+    "AccidentWeekDay": {},
+    "AccidentMonth": {}
+  },
+  "unexpected_category_codes": {
+    "AccidentSeverityCategory": [],
+    "AccidentWeekDay": []
+  },
+  "participation": {
+    "AccidentInvolvingPedestrian": {
+      "values": {
+        "false": 67404,
+        "true": 3363
+      },
+      "unexpected_values": [],
+      "property_damage_true": 169,
+      "severity_counts": [
+        {
+          "AccidentSeverityCategory": "as1",
+          "false": 46,
+          "true": 54
+        },
+        {
+          "AccidentSeverityCategory": "as2",
+          "false": 2203,
+          "true": 694
+        },
+        {
+          "AccidentSeverityCategory": "as3",
+          "false": 12721,
+          "true": 2446
+        },
+        {
+          "AccidentSeverityCategory": "as4",
+          "false": 52434,
+          "true": 169
+        }
+      ]
+    },
+    "AccidentInvolvingBicycle": {
+      "values": {
+        "false": 62014,
+        "true": 8753
+      },
+      "unexpected_values": [],
+      "property_damage_true": 1612,
+      "severity_counts": [
+        {
+          "AccidentSeverityCategory": "as1",
+          "false": 78,
+          "true": 22
+        },
+        {
+          "AccidentSeverityCategory": "as2",
+          "false": 1603,
+          "true": 1294
+        },
+        {
+          "AccidentSeverityCategory": "as3",
+          "false": 9342,
+          "true": 5825
+        },
+        {
+          "AccidentSeverityCategory": "as4",
+          "false": 50991,
+          "true": 1612
+        }
+      ]
+    },
+    "AccidentInvolvingMotorcycle": {
+      "values": {
+        "false": 66158,
+        "true": 4609
+      },
+      "unexpected_values": [],
+      "property_damage_true": 1777,
+      "severity_counts": [
+        {
+          "AccidentSeverityCategory": "as1",
+          "false": 89,
+          "true": 11
+        },
+        {
+          "AccidentSeverityCategory": "as2",
+          "false": 2360,
+          "true": 537
+        },
+        {
+          "AccidentSeverityCategory": "as3",
+          "false": 12883,
+          "true": 2284
+        },
+        {
+          "AccidentSeverityCategory": "as4",
+          "false": 50826,
+          "true": 1777
+        }
+      ]
+    }
+  },
+  "multiple_participation_rows": 803,
+  "positive_participation_count_distribution": {
+    "0": 54845,
+    "1": 15119,
+    "2": 803
+  },
+  "property_damage_participation_by_year": [
+    {
+      "AccidentYear": "2011",
+      "AccidentInvolvingPedestrian": 6,
+      "AccidentInvolvingBicycle": 55,
+      "AccidentInvolvingMotorcycle": 46
+    },
+    {
+      "AccidentYear": "2012",
+      "AccidentInvolvingPedestrian": 7,
+      "AccidentInvolvingBicycle": 42,
+      "AccidentInvolvingMotorcycle": 53
+    },
+    {
+      "AccidentYear": "2013",
+      "AccidentInvolvingPedestrian": 3,
+      "AccidentInvolvingBicycle": 52,
+      "AccidentInvolvingMotorcycle": 60
+    },
+    {
+      "AccidentYear": "2014",
+      "AccidentInvolvingPedestrian": 13,
+      "AccidentInvolvingBicycle": 61,
+      "AccidentInvolvingMotorcycle": 57
+    },
+    {
+      "AccidentYear": "2015",
+      "AccidentInvolvingPedestrian": 18,
+      "AccidentInvolvingBicycle": 94,
+      "AccidentInvolvingMotorcycle": 122
+    },
+    {
+      "AccidentYear": "2016",
+      "AccidentInvolvingPedestrian": 13,
+      "AccidentInvolvingBicycle": 112,
+      "AccidentInvolvingMotorcycle": 135
+    },
+    {
+      "AccidentYear": "2017",
+      "AccidentInvolvingPedestrian": 16,
+      "AccidentInvolvingBicycle": 139,
+      "AccidentInvolvingMotorcycle": 142
+    },
+    {
+      "AccidentYear": "2018",
+      "AccidentInvolvingPedestrian": 11,
+      "AccidentInvolvingBicycle": 134,
+      "AccidentInvolvingMotorcycle": 134
+    },
+    {
+      "AccidentYear": "2019",
+      "AccidentInvolvingPedestrian": 7,
+      "AccidentInvolvingBicycle": 127,
+      "AccidentInvolvingMotorcycle": 134
+    },
+    {
+      "AccidentYear": "2020",
+      "AccidentInvolvingPedestrian": 12,
+      "AccidentInvolvingBicycle": 144,
+      "AccidentInvolvingMotorcycle": 156
+    },
+    {
+      "AccidentYear": "2021",
+      "AccidentInvolvingPedestrian": 11,
+      "AccidentInvolvingBicycle": 129,
+      "AccidentInvolvingMotorcycle": 130
+    },
+    {
+      "AccidentYear": "2022",
+      "AccidentInvolvingPedestrian": 16,
+      "AccidentInvolvingBicycle": 129,
+      "AccidentInvolvingMotorcycle": 167
+    },
+    {
+      "AccidentYear": "2023",
+      "AccidentInvolvingPedestrian": 14,
+      "AccidentInvolvingBicycle": 119,
+      "AccidentInvolvingMotorcycle": 155
+    },
+    {
+      "AccidentYear": "2024",
+      "AccidentInvolvingPedestrian": 7,
+      "AccidentInvolvingBicycle": 154,
+      "AccidentInvolvingMotorcycle": 145
+    },
+    {
+      "AccidentYear": "2025",
+      "AccidentInvolvingPedestrian": 15,
+      "AccidentInvolvingBicycle": 121,
+      "AccidentInvolvingMotorcycle": 141
+    }
+  ],
+  "annual_counts": [
+    {
+      "year": 2011,
+      "as1": 11,
+      "as2": 197,
+      "as3": 864,
+      "as4": 2348,
+      "total": 3420,
+      "person_injury": 1072
+    },
+    {
+      "year": 2012,
+      "as1": 6,
+      "as2": 223,
+      "as3": 851,
+      "as4": 2171,
+      "total": 3251,
+      "person_injury": 1080
+    },
+    {
+      "year": 2013,
+      "as1": 9,
+      "as2": 230,
+      "as3": 801,
+      "as4": 2335,
+      "total": 3375,
+      "person_injury": 1040
+    },
+    {
+      "year": 2014,
+      "as1": 4,
+      "as2": 194,
+      "as3": 866,
+      "as4": 2229,
+      "total": 3293,
+      "person_injury": 1064
+    },
+    {
+      "year": 2015,
+      "as1": 6,
+      "as2": 180,
+      "as3": 1006,
+      "as4": 3337,
+      "total": 4529,
+      "person_injury": 1192
+    },
+    {
+      "year": 2016,
+      "as1": 7,
+      "as2": 211,
+      "as3": 1044,
+      "as4": 4294,
+      "total": 5556,
+      "person_injury": 1262
+    },
+    {
+      "year": 2017,
+      "as1": 5,
+      "as2": 239,
+      "as3": 994,
+      "as4": 4310,
+      "total": 5548,
+      "person_injury": 1238
+    },
+    {
+      "year": 2018,
+      "as1": 10,
+      "as2": 211,
+      "as3": 1058,
+      "as4": 4398,
+      "total": 5677,
+      "person_injury": 1279
+    },
+    {
+      "year": 2019,
+      "as1": 6,
+      "as2": 182,
+      "as3": 1107,
+      "as4": 4233,
+      "total": 5528,
+      "person_injury": 1295
+    },
+    {
+      "year": 2020,
+      "as1": 5,
+      "as2": 179,
+      "as3": 1052,
+      "as4": 3803,
+      "total": 5039,
+      "person_injury": 1236
+    },
+    {
+      "year": 2021,
+      "as1": 5,
+      "as2": 164,
+      "as3": 1017,
+      "as4": 3965,
+      "total": 5151,
+      "person_injury": 1186
+    },
+    {
+      "year": 2022,
+      "as1": 8,
+      "as2": 155,
+      "as3": 1243,
+      "as4": 4053,
+      "total": 5459,
+      "person_injury": 1406
+    },
+    {
+      "year": 2023,
+      "as1": 3,
+      "as2": 175,
+      "as3": 1104,
+      "as4": 3952,
+      "total": 5234,
+      "person_injury": 1282
+    },
+    {
+      "year": 2024,
+      "as1": 10,
+      "as2": 163,
+      "as3": 1049,
+      "as4": 3771,
+      "total": 4993,
+      "person_injury": 1222
+    },
+    {
+      "year": 2025,
+      "as1": 5,
+      "as2": 194,
+      "as3": 1111,
+      "as4": 3404,
+      "total": 4714,
+      "person_injury": 1310
+    }
+  ],
+  "year_month_counts": [
+    {
+      "year": 2011,
+      "1": 259,
+      "2": 206,
+      "3": 263,
+      "4": 304,
+      "5": 334,
+      "6": 287,
+      "7": 271,
+      "8": 314,
+      "9": 310,
+      "10": 299,
+      "11": 279,
+      "12": 294
+    },
+    {
+      "year": 2012,
+      "1": 245,
+      "2": 221,
+      "3": 307,
+      "4": 261,
+      "5": 291,
+      "6": 289,
+      "7": 288,
+      "8": 287,
+      "9": 254,
+      "10": 257,
+      "11": 297,
+      "12": 254
+    },
+    {
+      "year": 2013,
+      "1": 221,
+      "2": 207,
+      "3": 273,
+      "4": 279,
+      "5": 313,
+      "6": 344,
+      "7": 316,
+      "8": 300,
+      "9": 274,
+      "10": 299,
+      "11": 299,
+      "12": 250
+    },
+    {
+      "year": 2014,
+      "1": 233,
+      "2": 245,
+      "3": 300,
+      "4": 281,
+      "5": 296,
+      "6": 356,
+      "7": 268,
+      "8": 280,
+      "9": 281,
+      "10": 295,
+      "11": 231,
+      "12": 227
+    },
+    {
+      "year": 2015,
+      "1": 230,
+      "2": 225,
+      "3": 287,
+      "4": 267,
+      "5": 307,
+      "6": 338,
+      "7": 524,
+      "8": 473,
+      "9": 491,
+      "10": 475,
+      "11": 490,
+      "12": 422
+    },
+    {
+      "year": 2016,
+      "1": 430,
+      "2": 381,
+      "3": 395,
+      "4": 495,
+      "5": 516,
+      "6": 529,
+      "7": 459,
+      "8": 487,
+      "9": 522,
+      "10": 489,
+      "11": 467,
+      "12": 386
+    },
+    {
+      "year": 2017,
+      "1": 389,
+      "2": 378,
+      "3": 517,
+      "4": 432,
+      "5": 517,
+      "6": 514,
+      "7": 467,
+      "8": 475,
+      "9": 459,
+      "10": 471,
+      "11": 493,
+      "12": 436
+    },
+    {
+      "year": 2018,
+      "1": 388,
+      "2": 316,
+      "3": 494,
+      "4": 511,
+      "5": 500,
+      "6": 547,
+      "7": 548,
+      "8": 502,
+      "9": 459,
+      "10": 512,
+      "11": 485,
+      "12": 415
+    },
+    {
+      "year": 2019,
+      "1": 380,
+      "2": 396,
+      "3": 456,
+      "4": 440,
+      "5": 471,
+      "6": 563,
+      "7": 513,
+      "8": 476,
+      "9": 480,
+      "10": 483,
+      "11": 483,
+      "12": 387
+    },
+    {
+      "year": 2020,
+      "1": 384,
+      "2": 415,
+      "3": 299,
+      "4": 253,
+      "5": 417,
+      "6": 480,
+      "7": 546,
+      "8": 495,
+      "9": 475,
+      "10": 501,
+      "11": 384,
+      "12": 390
+    },
+    {
+      "year": 2021,
+      "1": 333,
+      "2": 288,
+      "3": 410,
+      "4": 452,
+      "5": 422,
+      "6": 508,
+      "7": 481,
+      "8": 413,
+      "9": 482,
+      "10": 492,
+      "11": 462,
+      "12": 408
+    },
+    {
+      "year": 2022,
+      "1": 342,
+      "2": 354,
+      "3": 496,
+      "4": 459,
+      "5": 510,
+      "6": 541,
+      "7": 509,
+      "8": 459,
+      "9": 515,
+      "10": 503,
+      "11": 426,
+      "12": 345
+    },
+    {
+      "year": 2023,
+      "1": 349,
+      "2": 366,
+      "3": 421,
+      "4": 410,
+      "5": 498,
+      "6": 587,
+      "7": 437,
+      "8": 444,
+      "9": 484,
+      "10": 443,
+      "11": 438,
+      "12": 357
+    },
+    {
+      "year": 2024,
+      "1": 352,
+      "2": 342,
+      "3": 430,
+      "4": 383,
+      "5": 434,
+      "6": 487,
+      "7": 446,
+      "8": 459,
+      "9": 432,
+      "10": 439,
+      "11": 428,
+      "12": 361
+    },
+    {
+      "year": 2025,
+      "1": 356,
+      "2": 296,
+      "3": 428,
+      "4": 416,
+      "5": 456,
+      "6": 465,
+      "7": 431,
+      "8": 404,
+      "9": 398,
+      "10": 395,
+      "11": 383,
+      "12": 286
+    }
+  ],
+  "zero_count_year_months": 0
+}

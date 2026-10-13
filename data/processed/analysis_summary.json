@@ -1,0 +1,1454 @@
+{
+  "generated_at": "2026-10-13T15:16:54.729142+00:00",
+  "alpha": 0.05,
+  "source_sha256": "DF426E859FECD37CD7365F273662459688B1862482957960402696E8722D766F",
+  "clean_sha256": "717BEBF3B3F8625F0DCE24CFAD78A7F7214AF0E9F6A7F914758C257C4E24F9A1",
+  "database_sha256": "19E4A0B757DE2EA238951DF509FAF6CA0DC79201C0390BD96573FB7FBAA5E63C",
+  "versions": {
+    "python": "3.14.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1"
+  },
+  "rows": 70767,
+  "h1": {
+    "n": 70767,
+    "chi2": 3877.063012549769,
+    "df": 23,
+    "p_value": 0.0,
+    "cramers_v": 0.23406476242007346,
+    "expected_min": 114.6083909166702,
+    "expected_cells_lt5": 0,
+    "method": "Pearson chi-square (asymptotic)",
+    "seed": null,
+    "resamples": null,
+    "expected_counts": [
+      [
+        919.2950527788375,
+        631.2953495273221,
+        507.6474769313381,
+        379.3916090833298,
+        404.73558296946317,
+        552.9594302429098,
+        1172.7347916401714,
+        2394.621532635268,
+        3181.8207215227435,
+        2860.029053089717,
+        3106.556799073014,
+        3249.404651885766,
+        3330.04456879619,
+        3346.940551386946,
+        3683.324204784716,
+        3647.9962411858633,
+        4137.979736317775,
+        4281.595588339198,
+        3839.9960433535407,
+        2734.8451820763917,
+        1896.958045416649,
+        1526.014427628697,
+        1430.0145265448584,
+        1132.7988327892945
+      ],
+      [
+        277.7049472211624,
+        190.70465047267794,
+        153.35252306866195,
+        114.6083909166702,
+        122.26441703053683,
+        167.04056975709017,
+        354.26520835982876,
+        723.3784673647322,
+        961.1792784772564,
+        863.970946910283,
+        938.4432009269857,
+        981.5953481142341,
+        1005.9554312038097,
+        1011.0594486130541,
+        1112.6757952152839,
+        1102.0037588141365,
+        1250.0202636822248,
+        1293.4044116608025,
+        1160.0039566464595,
+        826.1548179236084,
+        573.041954583351,
+        460.985572371303,
+        431.9854734551415,
+        342.20116721070553
+      ]
+    ],
+    "hypothesis": "H1",
+    "excluded_rows": 0,
+    "reject_h0": true,
+    "counts": [
+      {
+        "is_weekend": 0,
+        "0": 619,
+        "1": 343,
+        "2": 225,
+        "3": 183,
+        "4": 209,
+        "5": 440,
+        "6": 1275,
+        "7": 2812,
+        "8": 3717,
+        "9": 3164,
+        "10": 3308,
+        "11": 3407,
+        "12": 3313,
+        "13": 3366,
+        "14": 3612,
+        "15": 3628,
+        "16": 4213,
+        "17": 4464,
+        "18": 3908,
+        "19": 2662,
+        "20": 1788,
+        "21": 1420,
+        "22": 1339,
+        "23": 934
+      },
+      {
+        "is_weekend": 1,
+        "0": 578,
+        "1": 479,
+        "2": 436,
+        "3": 311,
+        "4": 318,
+        "5": 280,
+        "6": 252,
+        "7": 306,
+        "8": 426,
+        "9": 560,
+        "10": 737,
+        "11": 824,
+        "12": 1023,
+        "13": 992,
+        "14": 1184,
+        "15": 1122,
+        "16": 1175,
+        "17": 1111,
+        "18": 1092,
+        "19": 899,
+        "20": 682,
+        "21": 567,
+        "22": 523,
+        "23": 541
+      }
+    ]
+  },
+  "f1": {
+    "weekday_counts": {
+      "aw401": 9969,
+      "aw402": 10601,
+      "aw403": 11170,
+      "aw404": 10842,
+      "aw405": 11767,
+      "aw406": 9506,
+      "aw407": 6912
+    },
+    "weekday_peak_hour": 17,
+    "weekend_peak_hour": 14,
+    "night_share_weekday": 3.714879758597214,
+    "night_share_weekend": 14.630283834815447
+  },
+  "night_share_by_year": [
+    {
+      "AccidentYear": 2011,
+      "is_weekend": 0,
+      "n": 2541,
+      "night_share": 4.4864226682408495
+    },
+    {
+      "AccidentYear": 2011,
+      "is_weekend": 1,
+      "n": 879,
+      "night_share": 20.591581342434583
+    },
+    {
+      "AccidentYear": 2012,
+      "is_weekend": 0,
+      "n": 2467,
+      "night_share": 4.985812728009728
+    },
+    {
+      "AccidentYear": 2012,
+      "is_weekend": 1,
+      "n": 784,
+      "night_share": 19.387755102040817
+    },
+    {
+      "AccidentYear": 2013,
+      "is_weekend": 0,
+      "n": 2558,
+      "night_share": 4.769351055512119
+    },
+    {
+      "AccidentYear": 2013,
+      "is_weekend": 1,
+      "n": 817,
+      "night_share": 19.216646266829866
+    },
+    {
+      "AccidentYear": 2014,
+      "is_weekend": 0,
+      "n": 2491,
+      "night_share": 4.335608189482135
+    },
+    {
+      "AccidentYear": 2014,
+      "is_weekend": 1,
+      "n": 802,
+      "night_share": 20.199501246882793
+    },
+    {
+      "AccidentYear": 2015,
+      "is_weekend": 0,
+      "n": 3455,
+      "night_share": 3.444283646888567
+    },
+    {
+      "AccidentYear": 2015,
+      "is_weekend": 1,
+      "n": 1074,
+      "night_share": 15.549348230912477
+    },
+    {
+      "AccidentYear": 2016,
+      "is_weekend": 0,
+      "n": 4328,
+      "night_share": 3.0730129390018486
+    },
+    {
+      "AccidentYear": 2016,
+      "is_weekend": 1,
+      "n": 1228,
+      "night_share": 12.866449511400651
+    },
+    {
+      "AccidentYear": 2017,
+      "is_weekend": 0,
+      "n": 4264,
+      "night_share": 3.283302063789869
+    },
+    {
+      "AccidentYear": 2017,
+      "is_weekend": 1,
+      "n": 1284,
+      "night_share": 12.850467289719624
+    },
+    {
+      "AccidentYear": 2018,
+      "is_weekend": 0,
+      "n": 4401,
+      "night_share": 3.590093160645308
+    },
+    {
+      "AccidentYear": 2018,
+      "is_weekend": 1,
+      "n": 1276,
+      "night_share": 12.225705329153605
+    },
+    {
+      "AccidentYear": 2019,
+      "is_weekend": 0,
+      "n": 4307,
+      "night_share": 3.8774088692825637
+    },
+    {
+      "AccidentYear": 2019,
+      "is_weekend": 1,
+      "n": 1221,
+      "night_share": 14.496314496314497
+    },
+    {
+      "AccidentYear": 2020,
+      "is_weekend": 0,
+      "n": 3945,
+      "night_share": 3.3460076045627374
+    },
+    {
+      "AccidentYear": 2020,
+      "is_weekend": 1,
+      "n": 1094,
+      "night_share": 11.517367458866545
+    },
+    {
+      "AccidentYear": 2021,
+      "is_weekend": 0,
+      "n": 3955,
+      "night_share": 3.4386852085967132
+    },
+    {
+      "AccidentYear": 2021,
+      "is_weekend": 1,
+      "n": 1196,
+      "night_share": 15.050167224080269
+    },
+    {
+      "AccidentYear": 2022,
+      "is_weekend": 0,
+      "n": 4195,
+      "night_share": 3.289630512514899
+    },
+    {
+      "AccidentYear": 2022,
+      "is_weekend": 1,
+      "n": 1264,
+      "night_share": 14.240506329113925
+    },
+    {
+      "AccidentYear": 2023,
+      "is_weekend": 0,
+      "n": 4003,
+      "night_share": 3.6972270796902325
+    },
+    {
+      "AccidentYear": 2023,
+      "is_weekend": 1,
+      "n": 1231,
+      "night_share": 11.779041429731924
+    },
+    {
+      "AccidentYear": 2024,
+      "is_weekend": 0,
+      "n": 3825,
+      "night_share": 3.895424836601307
+    },
+    {
+      "AccidentYear": 2024,
+      "is_weekend": 1,
+      "n": 1168,
+      "night_share": 11.729452054794521
+    },
+    {
+      "AccidentYear": 2025,
+      "is_weekend": 0,
+      "n": 3614,
+      "night_share": 3.6524626452684004
+    },
+    {
+      "AccidentYear": 2025,
+      "is_weekend": 1,
+      "n": 1100,
+      "night_share": 14.454545454545453
+    }
+  ],
+  "h2": [
+    {
+      "n": 18164,
+      "chi2": 194.87948630405793,
+      "df": 2,
+      "p_value": 4.813458490861218e-43,
+      "cramers_v": 0.10358033623742077,
+      "expected_min": 17.58423254789694,
+      "expected_cells_lt5": 0,
+      "method": "Pearson chi-square (asymptotic)",
+      "seed": null,
+      "resamples": null,
+      "expected_counts": [
+        [
+          12499.99944946047,
+          2387.584783087426,
+          82.41576745210305
+        ],
+        [
+          2667.000550539529,
+          509.41521691257435,
+          17.58423254789694
+        ]
+      ],
+      "hypothesis": "H2",
+      "feature": "AccidentInvolvingPedestrian",
+      "label": "Fussgänger",
+      "excluded_missing": 0,
+      "excluded_property_damage": 52603,
+      "counts": [
+        {
+          "AccidentInvolvingPedestrian": 0,
+          "as3": 12721,
+          "as2": 2203,
+          "as1": 46
+        },
+        {
+          "AccidentInvolvingPedestrian": 1,
+          "as3": 2446,
+          "as2": 694,
+          "as1": 54
+        }
+      ],
+      "p_holm": 1.4440375472583655e-42,
+      "reject_h0_holm": true
+    },
+    {
+      "n": 18164,
+      "chi2": 52.6019305083421,
+      "df": 2,
+      "p_value": 3.781254609197129e-12,
+      "cramers_v": 0.053813977768587484,
+      "expected_min": 39.31402774719225,
+      "expected_cells_lt5": 0,
+      "method": "Pearson chi-square (asymptotic)",
+      "seed": null,
+      "resamples": null,
+      "expected_counts": [
+        [
+          9204.24141158335,
+          1758.0726161638406,
+          60.68597225280775
+        ],
+        [
+          5962.758588416648,
+          1138.9273838361594,
+          39.31402774719225
+        ]
+      ],
+      "hypothesis": "H2",
+      "feature": "AccidentInvolvingBicycle",
+      "label": "Velo",
+      "excluded_missing": 0,
+      "excluded_property_damage": 52603,
+      "counts": [
+        {
+          "AccidentInvolvingBicycle": 0,
+          "as3": 9342,
+          "as2": 1603,
+          "as1": 78
+        },
+        {
+          "AccidentInvolvingBicycle": 1,
+          "as3": 5825,
+          "as2": 1294,
+          "as1": 22
+        }
+      ],
+      "p_holm": 7.562509218394258e-12,
+      "reject_h0_holm": true
+    },
+    {
+      "n": 18164,
+      "chi2": 23.96056770356861,
+      "df": 2,
+      "p_value": 6.266554651077434e-06,
+      "cramers_v": 0.036319746215827994,
+      "expected_min": 15.591279453864788,
+      "expected_cells_lt5": 0,
+      "method": "Pearson chi-square (asymptotic)",
+      "seed": null,
+      "resamples": null,
+      "expected_counts": [
+        [
+          12802.270645232327,
+          2445.320634221537,
+          84.40872054613521
+        ],
+        [
+          2364.7293547676722,
+          451.6793657784629,
+          15.591279453864788
+        ]
+      ],
+      "hypothesis": "H2",
+      "feature": "AccidentInvolvingMotorcycle",
+      "label": "Motorrad",
+      "excluded_missing": 0,
+      "excluded_property_damage": 52603,
+      "counts": [
+        {
+          "AccidentInvolvingMotorcycle": 0,
+          "as3": 12883,
+          "as2": 2360,
+          "as1": 89
+        },
+        {
+          "AccidentInvolvingMotorcycle": 1,
+          "as3": 2284,
+          "as2": 537,
+          "as1": 11
+        }
+      ],
+      "p_holm": 6.266554651077434e-06,
+      "reject_h0_holm": true
+    }
+  ],
+  "f2_severe_shares": [
+    {
+      "participation": "Fussgänger",
+      "involved": 0,
+      "n": 14970,
+      "severe_or_fatal": 2249,
+      "severe_share_pct": 15.023380093520375
+    },
+    {
+      "participation": "Fussgänger",
+      "involved": 1,
+      "n": 3194,
+      "severe_or_fatal": 748,
+      "severe_share_pct": 23.418910457107074
+    },
+    {
+      "participation": "Velo",
+      "involved": 0,
+      "n": 11023,
+      "severe_or_fatal": 1681,
+      "severe_share_pct": 15.24993196044634
+    },
+    {
+      "participation": "Velo",
+      "involved": 1,
+      "n": 7141,
+      "severe_or_fatal": 1316,
+      "severe_share_pct": 18.428791485786306
+    },
+    {
+      "participation": "Motorrad",
+      "involved": 0,
+      "n": 15332,
+      "severe_or_fatal": 2449,
+      "severe_share_pct": 15.973128098095486
+    },
+    {
+      "participation": "Motorrad",
+      "involved": 1,
+      "n": 2832,
+      "severe_or_fatal": 548,
+      "severe_share_pct": 19.350282485875706
+    }
+  ],
+  "injury_shares_by_year": [
+    {
+      "year": 2011,
+      "involved": 0,
+      "n": 844,
+      "severe_share": 17.061611374407583,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2011,
+      "involved": 1,
+      "n": 228,
+      "severe_share": 28.07017543859649,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2012,
+      "involved": 0,
+      "n": 866,
+      "severe_share": 18.475750577367204,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2012,
+      "involved": 1,
+      "n": 214,
+      "severe_share": 32.242990654205606,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2013,
+      "involved": 0,
+      "n": 818,
+      "severe_share": 20.537897310513447,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2013,
+      "involved": 1,
+      "n": 222,
+      "severe_share": 31.98198198198198,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2014,
+      "involved": 0,
+      "n": 858,
+      "severe_share": 17.016317016317018,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2014,
+      "involved": 1,
+      "n": 206,
+      "severe_share": 25.24271844660194,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2015,
+      "involved": 0,
+      "n": 961,
+      "severe_share": 13.839750260145681,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2015,
+      "involved": 1,
+      "n": 231,
+      "severe_share": 22.943722943722943,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2016,
+      "involved": 0,
+      "n": 1039,
+      "severe_share": 15.88065447545717,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2016,
+      "involved": 1,
+      "n": 223,
+      "severe_share": 23.766816143497756,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2017,
+      "involved": 0,
+      "n": 991,
+      "severe_share": 18.062563067608476,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2017,
+      "involved": 1,
+      "n": 247,
+      "severe_share": 26.31578947368421,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2018,
+      "involved": 0,
+      "n": 1058,
+      "severe_share": 14.839319470699433,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2018,
+      "involved": 1,
+      "n": 221,
+      "severe_share": 28.95927601809955,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2019,
+      "involved": 0,
+      "n": 1073,
+      "severe_share": 13.606710158434296,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2019,
+      "involved": 1,
+      "n": 222,
+      "severe_share": 18.91891891891892,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2020,
+      "involved": 0,
+      "n": 1066,
+      "severe_share": 14.540337711069418,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2020,
+      "involved": 1,
+      "n": 170,
+      "severe_share": 17.058823529411764,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2021,
+      "involved": 0,
+      "n": 1030,
+      "severe_share": 13.009708737864079,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2021,
+      "involved": 1,
+      "n": 156,
+      "severe_share": 22.435897435897438,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2022,
+      "involved": 0,
+      "n": 1186,
+      "severe_share": 10.370994940978077,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2022,
+      "involved": 1,
+      "n": 220,
+      "severe_share": 18.181818181818183,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2023,
+      "involved": 0,
+      "n": 1060,
+      "severe_share": 13.39622641509434,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2023,
+      "involved": 1,
+      "n": 222,
+      "severe_share": 16.216216216216218,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2024,
+      "involved": 0,
+      "n": 1028,
+      "severe_share": 13.13229571984436,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2024,
+      "involved": 1,
+      "n": 194,
+      "severe_share": 19.587628865979383,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2025,
+      "involved": 0,
+      "n": 1092,
+      "severe_share": 14.835164835164836,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2025,
+      "involved": 1,
+      "n": 218,
+      "severe_share": 16.972477064220186,
+      "participation": "Fussgänger"
+    },
+    {
+      "year": 2011,
+      "involved": 0,
+      "n": 792,
+      "severe_share": 19.444444444444446,
+      "participation": "Velo"
+    },
+    {
+      "year": 2011,
+      "involved": 1,
+      "n": 280,
+      "severe_share": 19.28571428571429,
+      "participation": "Velo"
+    },
+    {
+      "year": 2012,
+      "involved": 0,
+      "n": 766,
+      "severe_share": 18.14621409921671,
+      "participation": "Velo"
+    },
+    {
+      "year": 2012,
+      "involved": 1,
+      "n": 314,
+      "severe_share": 28.662420382165603,
+      "participation": "Velo"
+    },
+    {
+      "year": 2013,
+      "involved": 0,
+      "n": 730,
+      "severe_share": 19.315068493150687,
+      "participation": "Velo"
+    },
+    {
+      "year": 2013,
+      "involved": 1,
+      "n": 310,
+      "severe_share": 31.61290322580645,
+      "participation": "Velo"
+    },
+    {
+      "year": 2014,
+      "involved": 0,
+      "n": 701,
+      "severe_share": 15.549215406562054,
+      "participation": "Velo"
+    },
+    {
+      "year": 2014,
+      "involved": 1,
+      "n": 363,
+      "severe_share": 24.517906336088156,
+      "participation": "Velo"
+    },
+    {
+      "year": 2015,
+      "involved": 0,
+      "n": 750,
+      "severe_share": 14.000000000000002,
+      "participation": "Velo"
+    },
+    {
+      "year": 2015,
+      "involved": 1,
+      "n": 442,
+      "severe_share": 18.32579185520362,
+      "participation": "Velo"
+    },
+    {
+      "year": 2016,
+      "involved": 0,
+      "n": 790,
+      "severe_share": 14.936708860759493,
+      "participation": "Velo"
+    },
+    {
+      "year": 2016,
+      "involved": 1,
+      "n": 472,
+      "severe_share": 21.1864406779661,
+      "participation": "Velo"
+    },
+    {
+      "year": 2017,
+      "involved": 0,
+      "n": 763,
+      "severe_share": 16.90694626474443,
+      "participation": "Velo"
+    },
+    {
+      "year": 2017,
+      "involved": 1,
+      "n": 475,
+      "severe_share": 24.210526315789473,
+      "participation": "Velo"
+    },
+    {
+      "year": 2018,
+      "involved": 0,
+      "n": 721,
+      "severe_share": 16.36615811373093,
+      "participation": "Velo"
+    },
+    {
+      "year": 2018,
+      "involved": 1,
+      "n": 558,
+      "severe_share": 18.45878136200717,
+      "participation": "Velo"
+    },
+    {
+      "year": 2019,
+      "involved": 0,
+      "n": 727,
+      "severe_share": 13.75515818431912,
+      "participation": "Velo"
+    },
+    {
+      "year": 2019,
+      "involved": 1,
+      "n": 568,
+      "severe_share": 15.492957746478872,
+      "participation": "Velo"
+    },
+    {
+      "year": 2020,
+      "involved": 0,
+      "n": 619,
+      "severe_share": 12.439418416801292,
+      "participation": "Velo"
+    },
+    {
+      "year": 2020,
+      "involved": 1,
+      "n": 617,
+      "severe_share": 17.3419773095624,
+      "participation": "Velo"
+    },
+    {
+      "year": 2021,
+      "involved": 0,
+      "n": 683,
+      "severe_share": 12.445095168374817,
+      "participation": "Velo"
+    },
+    {
+      "year": 2021,
+      "involved": 1,
+      "n": 503,
+      "severe_share": 16.69980119284294,
+      "participation": "Velo"
+    },
+    {
+      "year": 2022,
+      "involved": 0,
+      "n": 759,
+      "severe_share": 11.989459815546773,
+      "participation": "Velo"
+    },
+    {
+      "year": 2022,
+      "involved": 1,
+      "n": 647,
+      "severe_share": 11.128284389489954,
+      "participation": "Velo"
+    },
+    {
+      "year": 2023,
+      "involved": 0,
+      "n": 742,
+      "severe_share": 11.859838274932615,
+      "participation": "Velo"
+    },
+    {
+      "year": 2023,
+      "involved": 1,
+      "n": 540,
+      "severe_share": 16.666666666666664,
+      "participation": "Velo"
+    },
+    {
+      "year": 2024,
+      "involved": 0,
+      "n": 699,
+      "severe_share": 15.450643776824036,
+      "participation": "Velo"
+    },
+    {
+      "year": 2024,
+      "involved": 1,
+      "n": 523,
+      "severe_share": 12.4282982791587,
+      "participation": "Velo"
+    },
+    {
+      "year": 2025,
+      "involved": 0,
+      "n": 781,
+      "severe_share": 15.236875800256081,
+      "participation": "Velo"
+    },
+    {
+      "year": 2025,
+      "involved": 1,
+      "n": 529,
+      "severe_share": 15.122873345935728,
+      "participation": "Velo"
+    },
+    {
+      "year": 2011,
+      "involved": 0,
+      "n": 870,
+      "severe_share": 17.93103448275862,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2011,
+      "involved": 1,
+      "n": 202,
+      "severe_share": 25.742574257425744,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2012,
+      "involved": 0,
+      "n": 902,
+      "severe_share": 20.288248337028826,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2012,
+      "involved": 1,
+      "n": 178,
+      "severe_share": 25.842696629213485,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2013,
+      "involved": 0,
+      "n": 886,
+      "severe_share": 23.13769751693002,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2013,
+      "involved": 1,
+      "n": 154,
+      "severe_share": 22.07792207792208,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2014,
+      "involved": 0,
+      "n": 872,
+      "severe_share": 17.431192660550458,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2014,
+      "involved": 1,
+      "n": 192,
+      "severe_share": 23.958333333333336,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2015,
+      "involved": 0,
+      "n": 999,
+      "severe_share": 15.015015015015015,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2015,
+      "involved": 1,
+      "n": 193,
+      "severe_share": 18.65284974093264,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2016,
+      "involved": 0,
+      "n": 1072,
+      "severe_share": 16.511194029850746,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2016,
+      "involved": 1,
+      "n": 190,
+      "severe_share": 21.578947368421055,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2017,
+      "involved": 0,
+      "n": 1032,
+      "severe_share": 19.57364341085271,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2017,
+      "involved": 1,
+      "n": 206,
+      "severe_share": 20.388349514563107,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2018,
+      "involved": 0,
+      "n": 1092,
+      "severe_share": 17.032967032967033,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2018,
+      "involved": 1,
+      "n": 187,
+      "severe_share": 18.71657754010695,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2019,
+      "involved": 0,
+      "n": 1100,
+      "severe_share": 13.818181818181818,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2019,
+      "involved": 1,
+      "n": 195,
+      "severe_share": 18.461538461538463,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2020,
+      "involved": 0,
+      "n": 1058,
+      "severe_share": 14.839319470699433,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2020,
+      "involved": 1,
+      "n": 178,
+      "severe_share": 15.168539325842698,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2021,
+      "involved": 0,
+      "n": 1003,
+      "severe_share": 14.15752741774676,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2021,
+      "involved": 1,
+      "n": 183,
+      "severe_share": 14.754098360655737,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2022,
+      "involved": 0,
+      "n": 1215,
+      "severe_share": 12.016460905349795,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2022,
+      "involved": 1,
+      "n": 191,
+      "severe_share": 8.900523560209423,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2023,
+      "involved": 0,
+      "n": 1103,
+      "severe_share": 12.964641885766092,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2023,
+      "involved": 1,
+      "n": 179,
+      "severe_share": 19.553072625698324,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2024,
+      "involved": 0,
+      "n": 1012,
+      "severe_share": 13.24110671936759,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2024,
+      "involved": 1,
+      "n": 210,
+      "severe_share": 18.571428571428573,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2025,
+      "involved": 0,
+      "n": 1116,
+      "severe_share": 14.695340501792115,
+      "participation": "Motorrad"
+    },
+    {
+      "year": 2025,
+      "involved": 1,
+      "n": 194,
+      "severe_share": 18.04123711340206,
+      "participation": "Motorrad"
+    }
+  ],
+  "annual_counts": [
+    {
+      "year": 2011,
+      "total": 3420,
+      "property_damage": 2348,
+      "person_injury": 1072,
+      "person_injury_share_pct": 31.34502923976608
+    },
+    {
+      "year": 2012,
+      "total": 3251,
+      "property_damage": 2171,
+      "person_injury": 1080,
+      "person_injury_share_pct": 33.22054752383882
+    },
+    {
+      "year": 2013,
+      "total": 3375,
+      "property_damage": 2335,
+      "person_injury": 1040,
+      "person_injury_share_pct": 30.814814814814817
+    },
+    {
+      "year": 2014,
+      "total": 3293,
+      "property_damage": 2229,
+      "person_injury": 1064,
+      "person_injury_share_pct": 32.3109626480413
+    },
+    {
+      "year": 2015,
+      "total": 4529,
+      "property_damage": 3337,
+      "person_injury": 1192,
+      "person_injury_share_pct": 26.319275778317508
+    },
+    {
+      "year": 2016,
+      "total": 5556,
+      "property_damage": 4294,
+      "person_injury": 1262,
+      "person_injury_share_pct": 22.714182865370773
+    },
+    {
+      "year": 2017,
+      "total": 5548,
+      "property_damage": 4310,
+      "person_injury": 1238,
+      "person_injury_share_pct": 22.314347512617157
+    },
+    {
+      "year": 2018,
+      "total": 5677,
+      "property_damage": 4398,
+      "person_injury": 1279,
+      "person_injury_share_pct": 22.52950502025718
+    },
+    {
+      "year": 2019,
+      "total": 5528,
+      "property_damage": 4233,
+      "person_injury": 1295,
+      "person_injury_share_pct": 23.426193921852388
+    },
+    {
+      "year": 2020,
+      "total": 5039,
+      "property_damage": 3803,
+      "person_injury": 1236,
+      "person_injury_share_pct": 24.528676324667593
+    },
+    {
+      "year": 2021,
+      "total": 5151,
+      "property_damage": 3965,
+      "person_injury": 1186,
+      "person_injury_share_pct": 23.024655406717145
+    },
+    {
+      "year": 2022,
+      "total": 5459,
+      "property_damage": 4053,
+      "person_injury": 1406,
+      "person_injury_share_pct": 25.7556328997985
+    },
+    {
+      "year": 2023,
+      "total": 5234,
+      "property_damage": 3952,
+      "person_injury": 1282,
+      "person_injury_share_pct": 24.493695070691633
+    },
+    {
+      "year": 2024,
+      "total": 4993,
+      "property_damage": 3771,
+      "person_injury": 1222,
+      "person_injury_share_pct": 24.47426396955738
+    },
+    {
+      "year": 2025,
+      "total": 4714,
+      "property_damage": 3404,
+      "person_injury": 1310,
+      "person_injury_share_pct": 27.78956300381841
+    }
+  ],
+  "severity_shares_by_year": [
+    {
+      "year": 2011,
+      "as1": 0.32163742690058483,
+      "as2": 5.760233918128655,
+      "as3": 25.263157894736842,
+      "as4": 68.65497076023391
+    },
+    {
+      "year": 2012,
+      "as1": 0.1845585973546601,
+      "as2": 6.859427868348201,
+      "as3": 26.17656105813596,
+      "as4": 66.77945247616118
+    },
+    {
+      "year": 2013,
+      "as1": 0.26666666666666666,
+      "as2": 6.814814814814815,
+      "as3": 23.733333333333334,
+      "as4": 69.18518518518518
+    },
+    {
+      "year": 2014,
+      "as1": 0.12146978439113272,
+      "as2": 5.891284542969936,
+      "as3": 26.29820832068023,
+      "as4": 67.6890373519587
+    },
+    {
+      "year": 2015,
+      "as1": 0.1324795760653566,
+      "as2": 3.974387281960698,
+      "as3": 22.212408920291455,
+      "as4": 73.6807242216825
+    },
+    {
+      "year": 2016,
+      "as1": 0.12598992080633548,
+      "as2": 3.7976961843052557,
+      "as3": 18.790496760259177,
+      "as4": 77.28581713462923
+    },
+    {
+      "year": 2017,
+      "as1": 0.09012256669069935,
+      "as2": 4.307858687815429,
+      "as3": 17.91636625811103,
+      "as4": 77.68565248738284
+    },
+    {
+      "year": 2018,
+      "as1": 0.17614937466971992,
+      "as2": 3.7167518055310906,
+      "as3": 18.636603840056367,
+      "as4": 77.47049497974282
+    },
+    {
+      "year": 2019,
+      "as1": 0.10853835021707671,
+      "as2": 3.29232995658466,
+      "as3": 20.02532561505065,
+      "as4": 76.57380607814761
+    },
+    {
+      "year": 2020,
+      "as1": 0.09922603691208574,
+      "as2": 3.5522921214526693,
+      "as3": 20.877158166302838,
+      "as4": 75.4713236753324
+    },
+    {
+      "year": 2021,
+      "as1": 0.09706853038245,
+      "as2": 3.1838477965443603,
+      "as3": 19.74373907979033,
+      "as4": 76.97534459328286
+    },
+    {
+      "year": 2022,
+      "as1": 0.14654698662758747,
+      "as2": 2.8393478659095073,
+      "as3": 22.769738047261402,
+      "as4": 74.2443671002015
+    },
+    {
+      "year": 2023,
+      "as1": 0.05731753916698509,
+      "as2": 3.3435231180741307,
+      "as3": 21.092854413450514,
+      "as4": 75.50630492930837
+    },
+    {
+      "year": 2024,
+      "as1": 0.2002803925495694,
+      "as2": 3.2645703985579813,
+      "as3": 21.00941317844983,
+      "as4": 75.52573603044263
+    },
+    {
+      "year": 2025,
+      "as1": 0.10606703436571914,
+      "as2": 4.115400933389902,
+      "as3": 23.568095036062793,
+      "as4": 72.21043699618158
+    }
+  ],
+  "injury_participation_shares_by_year": [
+    {
+      "year": 2011,
+      "AccidentInvolvingPedestrian": 21.26865671641791,
+      "AccidentInvolvingBicycle": 26.119402985074625,
+      "AccidentInvolvingMotorcycle": 18.84328358208955
+    },
+    {
+      "year": 2012,
+      "AccidentInvolvingPedestrian": 19.814814814814817,
+      "AccidentInvolvingBicycle": 29.074074074074076,
+      "AccidentInvolvingMotorcycle": 16.48148148148148
+    },
+    {
+      "year": 2013,
+      "AccidentInvolvingPedestrian": 21.346153846153847,
+      "AccidentInvolvingBicycle": 29.807692307692307,
+      "AccidentInvolvingMotorcycle": 14.807692307692308
+    },
+    {
+      "year": 2014,
+      "AccidentInvolvingPedestrian": 19.360902255639097,
+      "AccidentInvolvingBicycle": 34.116541353383454,
+      "AccidentInvolvingMotorcycle": 18.045112781954884
+    },
+    {
+      "year": 2015,
+      "AccidentInvolvingPedestrian": 19.379194630872483,
+      "AccidentInvolvingBicycle": 37.080536912751676,
+      "AccidentInvolvingMotorcycle": 16.191275167785236
+    },
+    {
+      "year": 2016,
+      "AccidentInvolvingPedestrian": 17.67036450079239,
+      "AccidentInvolvingBicycle": 37.400950871632325,
+      "AccidentInvolvingMotorcycle": 15.055467511885896
+    },
+    {
+      "year": 2017,
+      "AccidentInvolvingPedestrian": 19.951534733441033,
+      "AccidentInvolvingBicycle": 38.368336025848144,
+      "AccidentInvolvingMotorcycle": 16.63974151857835
+    },
+    {
+      "year": 2018,
+      "AccidentInvolvingPedestrian": 17.279124315871776,
+      "AccidentInvolvingBicycle": 43.627834245504296,
+      "AccidentInvolvingMotorcycle": 14.620797498045349
+    },
+    {
+      "year": 2019,
+      "AccidentInvolvingPedestrian": 17.142857142857142,
+      "AccidentInvolvingBicycle": 43.86100386100386,
+      "AccidentInvolvingMotorcycle": 15.057915057915059
+    },
+    {
+      "year": 2020,
+      "AccidentInvolvingPedestrian": 13.754045307443366,
+      "AccidentInvolvingBicycle": 49.919093851132686,
+      "AccidentInvolvingMotorcycle": 14.401294498381878
+    },
+    {
+      "year": 2021,
+      "AccidentInvolvingPedestrian": 13.15345699831366,
+      "AccidentInvolvingBicycle": 42.41146711635751,
+      "AccidentInvolvingMotorcycle": 15.43001686340641
+    },
+    {
+      "year": 2022,
+      "AccidentInvolvingPedestrian": 15.647226173541965,
+      "AccidentInvolvingBicycle": 46.01706970128023,
+      "AccidentInvolvingMotorcycle": 13.584637268847796
+    },
+    {
+      "year": 2023,
+      "AccidentInvolvingPedestrian": 17.31669266770671,
+      "AccidentInvolvingBicycle": 42.12168486739469,
+      "AccidentInvolvingMotorcycle": 13.962558502340094
+    },
+    {
+      "year": 2024,
+      "AccidentInvolvingPedestrian": 15.875613747954173,
+      "AccidentInvolvingBicycle": 42.798690671031096,
+      "AccidentInvolvingMotorcycle": 17.18494271685761
+    },
+    {
+      "year": 2025,
+      "AccidentInvolvingPedestrian": 16.6412213740458,
+      "AccidentInvolvingBicycle": 40.38167938931297,
+      "AccidentInvolvingMotorcycle": 14.80916030534351
+    }
+  ]
+}
