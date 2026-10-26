@@ -12,7 +12,7 @@ bereinigt sie, speichert sie in SQLite und wertet sie mit SQL/Pandas aus.
 
 | Unterlage | Inhalt |
 |---|---|
-| **[Präsentation (PDF)](presentations/teil1_verkehrsunfaelle_zuerich.pdf)** | Projekt, Vorgehen und Ergebnisse; 14 Haupt- und 4 Reservefolien (A–D) |
+| **[Präsentation (PDF)](presentations/teil1_verkehrsunfaelle_zuerich.pdf)** | Projekt, Vorgehen und Ergebnisse; 15 Haupt- und 4 Reservefolien (A–D) |
 | [Präsentation (PowerPoint)](presentations/teil1_verkehrsunfaelle_zuerich.pptx) | Dieselben Folien mit Sprechernotizen |
 | [01 · Datenprofil](notebooks/01_datenprofil.ipynb) | Prüfung der Rohdaten; begründet die Bereinigungsregeln |
 | [02 · Analyse](notebooks/02_analyse.ipynb) | SQL-Abfragen, Diagramme, Hypothesentests und Antworten |
@@ -22,9 +22,10 @@ Die Notebooks sind bereits ausgeführt und ohne Neulauf lesbar. Alle Daten liege
 vollständig im Repository (Raw-CSV 37 MB, unter der GitHub-Grenze von 100 MB);
 ein externer Datenlink ist nicht nötig.
 
-**Branches:** `abgabe/teil1` hält die Teil-1-Abgabe unverändert fest; `main`
-enthält den abgeschlossenen Projektstand. Der frühere Arbeitsbranch
-`feature/accident-data` enthält interne Arbeitsunterlagen und gehört nicht zur Abgabe.
+**Branches:** Massgebend für Teil 1 ist der Abgabe-Branch
+[`abgabe/teil1`](https://github.com/soutorub/de_projektarbeit_hs_2026_zhaw/tree/abgabe/teil1)
+(Abgabe 27. Oktober 2026); er wird danach nicht mehr verändert. Auf `main` geht
+die Arbeit an Teil 2 weiter.
 
 ## Wegweiser zum Bewertungsraster
 
@@ -34,8 +35,8 @@ enthält den abgeschlossenen Projektstand. Der frühere Arbeitsbranch
 | Entwurf des DE-Lebenszyklus | [Lebenszyklus](#data-engineering-lebenszyklus) | [pipeline.py](src/de_projekt/pipeline.py), [config.py](src/de_projekt/config.py) | 4, C |
 | Ingestion | [Ingestion](#ingestion) | [ingestion.py](src/de_projekt/ingestion.py), [Tests](tests/test_ingestion.py) | 5 |
 | Storage | [Storage](#storage) | [storage.py](src/de_projekt/storage.py), [schema.sql](src/de_projekt/schema.sql), [Tests](tests/test_storage.py) | 6, A |
-| Transformation Teil 1 | [Transformation](#transformation), [Ergebnisse](#ergebnisse) | [01 · Datenprofil](notebooks/01_datenprofil.ipynb), [transformation.py](src/de_projekt/transformation.py), [Tests](tests/test_transformation.py) | 7–13, B |
-| Skalierbarkeit (alle Bereiche) | [Skalierbarkeit](#skalierbarkeit-gemessen) | [benchmark.py](src/de_projekt/benchmark.py), [Messwerte](data/processed/scaling_benchmark.csv) | – |
+| Transformation Teil 1 | [Transformation](#transformation), [Ergebnisse](#ergebnisse) | [01 · Datenprofil](notebooks/01_datenprofil.ipynb), [transformation.py](src/de_projekt/transformation.py), [Tests](tests/test_transformation.py) | 7, 9–14, B |
+| Skalierbarkeit (alle Bereiche) | [Skalierbarkeit](#skalierbarkeit-gemessen) | [benchmark.py](src/de_projekt/benchmark.py), [Messwerte](data/processed/scaling_benchmark.csv) | 8, C |
 
 ## Konzept und Forschungsfragen
 
