@@ -1,0 +1,5 @@
+factor,rows,raw_mb,sqlite_mb,ingestion_s,transformation_s,storage_s,query_s,total_s,peak_memory_mb,platform
+1,70767,31.991,14.469,0.208,1.424,3.522,0.009,5.162,303.969,"Darwin arm64, Python 3.14.7"
+2,141534,63.981,29.031,0.414,2.921,6.202,0.021,9.558,439.812,"Darwin arm64, Python 3.14.7"
+5,353835,159.952,72.633,1.025,7.116,18.858,0.055,27.053,965.938,"Darwin arm64, Python 3.14.7"
+10,707670,319.903,145.309,2.041,14.112,39.946,0.112,56.211,1834.594,"Darwin arm64, Python 3.14.7"
