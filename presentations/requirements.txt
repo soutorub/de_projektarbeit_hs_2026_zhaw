@@ -1,2 +1,0 @@
-# Optional: nur zum erneuten Erstellen der Präsentation, nicht für die Datenpipeline.
-python-pptx==1.0.2
