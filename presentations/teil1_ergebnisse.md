@@ -23,13 +23,14 @@ Der Vergleich der Gesamtzahlen wird durch die Sachschaden-Umstellung im Juli 201
 - Velo-Anteil an Personenschadenunfällen: 26.12 % (2011) → 40.38 % (2025).
 - Motorrad-Anteil an Personenschadenunfällen: 18.84 % (2011) → 14.81 % (2025).
 
-## Grenzen und offene Abgabeaufgaben
+## Grenzen und Abschlussstand
 - Keine Verkehrsleistungsdaten: Fallzahlen und Anteile sind keine Risiken pro Fahrt oder Kilometer.
 - Modellbasierte p-Werte setzen unabhängige Beobachtungen voraus; Jahreszusammensetzung und zeitliche Abhängigkeit bleiben mögliche Einflüsse.
 - Beteiligungsdefinition bei Sachschäden weiterhin unklar; keine automatische Korrektur behauptet.
 - Mehrfachbeteiligung: Beteiligungsanteile sind nicht gegenseitig ausschliessend.
-- Die Präsentation muss Konzept und Begründungen ebenso wie diese Ergebnisse enthalten.
-- Teamreview, Präsentation und eingefrorener Abgabe-Branch stehen noch aus.
+- Konzept und Begründungen sowie diese Ergebnisse sind in der PowerPoint und PDF enthalten.
+- Abschlussprüfung am 26. Oktober 2026 erfolgreich; persönliches Verständnis und Vortrag üben.
+- Umfang, Prüfungen und GitHub-Abgabebranch: `docs/abgabe_teil1.md`.
 
 ## Präzisierungen aus dem fachlichen Review
 Der höhere Nachtanteil am Wochenende zeigt sich in 15/15 Jahren. Die folgenden Kontrollen sind deskriptiv, keine adjustierten Tests.

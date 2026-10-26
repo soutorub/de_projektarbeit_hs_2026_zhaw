@@ -8,9 +8,17 @@ Eine lokale Python-Pipeline verarbeitet einen festgehaltenen Open-Data-Snapshot
 und speichert den aufbereiteten Bestand in SQLite. Zwei ausgeführte Notebooks
 dokumentieren Datenqualität, Hypothesentests und Antworten auf die Forschungsfragen.
 
-**Stand:** Konzeption und technische Teil-1-Inhalte sind erarbeitet und geprüft.
-Teamreview, Präsentation und eingefrorener GitHub-Abgabe-Branch stehen noch aus.
-Es werden keine Machine-Learning-Modelle gebaut.
+**Abschlussstand: 26. Oktober 2026.** Konzeption, technische Teil-1-Inhalte und
+Präsentation sind ausgearbeitet; der vollständige Ablauf wurde erneut geprüft.
+Es werden keine Machine-Learning-Modelle gebaut. Abgabebranch: **`abgabe/teil1`**.
+
+**Direkt zum Einstieg:** [Abgabeübersicht und Abschlussprüfung](docs/abgabe_teil1.md) ·
+[PowerPoint mit Sprechernotizen](presentations/teil1_verkehrsunfaelle_zuerich.pptx) ·
+[PDF](presentations/teil1_verkehrsunfaelle_zuerich.pdf) ·
+[Vorbereitung auf den Vortrag](presentations/vorbereitung_teil1.md).
+Die Präsentation umfasst 14 Hauptfolien und 4 Reservefolien für ca. 12–15 Minuten.
+Die persönliche Vorbereitung und eine allfällige Einreichung auf der Kursplattform
+liegen beim Team; ein GitHub-Push allein belegt diese Einreichung nicht.
 
 ## Inhalt
 
@@ -128,7 +136,7 @@ flowchart TD
     C --> D[SQLite]
     D --> A[SQL und Pandas: F1–F3, H1/H2]
     A --> E[Ergebnisse und Abbildungen]
-    E --> F[Präsentation: noch ausstehend]
+    E --> F[Präsentation und PDF]
 ```
 
 | Phase | Umsetzung und Begründung |
@@ -137,7 +145,7 @@ flowchart TD
 | Ingestion | Öffentliche CSV und Katalogmetadaten beziehen; lokaler Snapshot mit Prüfsumme, Format- und Pflichtspaltenprüfung |
 | Storage | Unveränderte Raw-Dateien als Ausgangspunkt; aufbereiteter Bestand in CSV und SQLite. Speicherung begleitet mehrere Phasen |
 | Transformation | Profilbefunde begründen Typisierung, Spaltenauswahl und drei Features; Qualitätsbericht dokumentiert die Verarbeitung |
-| Serving | Teil 1: lesende SQL-/Notebook-Analyse und Ergebnisartefakte; Präsentation folgt. Ein eigener Serving-Dienst bleibt Teil 2 |
+| Serving | Teil 1: lesende SQL-/Notebook-Analyse, Ergebnisartefakte und Präsentation. Ein eigener Serving-Dienst bleibt Teil 2 |
 
 ### Unterströmungen
 
@@ -210,7 +218,7 @@ sind deskriptiv; zeitliche Unabhängigkeit wird dadurch nicht bewiesen.
 Beteiligungsanteile können wegen Mehrfachbeteiligung zusammen über 100 % liegen.
 
 Details: [Analyse-Notebook](notebooks/02_analyse.ipynb) und
-[Ergebnisgrundlage für spätere Folien](presentations/teil1_ergebnisse.md).
+[Ergebnisgrundlage der Folien](presentations/teil1_ergebnisse.md).
 
 Das [fachliche Review](docs/fachliches_review_teil1.md) bestätigt die unabhängige
 Nachrechnung, präzisiert aber die Interpretation: Der höhere Nachtanteil am
@@ -371,7 +379,9 @@ Ein Artefakt ist eine gespeicherte Datei, die Daten, Umsetzung oder Ergebnisse b
 | `data/processed/data_profile.json`, `profile_annual_counts.png` | Profilbericht und -abbildung | Ja |
 | `data/processed/analysis_summary.json`, `annual_counts.csv`, `hypothesis_tests_h2.csv` | Analyseergebnisse und Prüfsummen | Ja |
 | `presentations/figures/`, `teil1_ergebnisse.md` | Vier Abbildungen und Grundlage für Folien | Ja |
-| Präsentation | Zusammenfassung aller geforderten Teile | Noch zu erstellen |
+| `presentations/teil1_verkehrsunfaelle_zuerich.pptx`, `.pdf` | Präsentation aller geforderten Teile; PPTX mit Sprechernotizen | Ja |
+| `docs/abgabe_teil1.md`, `abgabe_sha256.json` | Aufgabenabgleich, Abschlussprüfung und Dateiintegrität | Ja |
+| `presentations/vorbereitung_teil1.md` | Sprechhilfe und typische Rückfragen | Lernhilfe für das Team |
 | `.venv/`, Caches und SQLite-Nebendateien | Lokale Umgebung / temporäre Arbeitsdateien | Nein; ignoriert |
 
 Module: `config.py` setzt Pfade, `ingestion.py` sichert den Snapshot,
@@ -385,12 +395,12 @@ für Teil 2 und wird in der Teil-1-Pipeline nicht aufgerufen.
 
 | Geforderter Teil | Nachweis | Aktueller Stand |
 |---|---|---|
-| Konzeptionalisierung (grün) | Problem, Fragen, Hypothesen, Methoden im README | Erarbeitet; in Präsentation übernehmen |
-| Lebenszyklusentwurf (grün) | Diagramm, fünf Phasen und Unterströmungen | Erarbeitet; in Präsentation übernehmen |
+| Konzeptionalisierung (grün) | README und Folien 1–3, 8: Problem, Fragen, Hypothesen, Methoden | Dokumentiert und in Präsentation |
+| Lebenszyklusentwurf (grün) | README, Folie 4 und Reserve C: Phasen und Unterströmungen | Dokumentiert und in Präsentation |
 | Ingestion (blau) | Identifizierte Quelle, Raw-Daten, Metadaten und Code | Implementiert und geprüft |
 | Storage (blau) | Optionenvergleich, Auswahl, SQL-Schema und SQLite-Datei | Implementiert und geprüft |
 | Transformation Teil 1 (blau) | Profil, Bereinigung, H1/H2 und Code/Notebooks | Ausgeführt und geprüft |
-| Forschungsfragen beantworten (grün) | Ergebnistabelle, Notebook und Interpretation | Dokumentiert; in Präsentation übernehmen |
+| Forschungsfragen beantworten (grün) | Ergebnistabelle, Notebook und Folien 9–13 | Dokumentiert und in Präsentation |
 
 **Grün:** Präsentation. **Blau:** Präsentation plus technische Artefakte.
 Das README ist Arbeitsdokumentation und ersetzt die geforderte Präsentation nicht.
@@ -405,27 +415,32 @@ Das Team muss Entscheidungen selbst prüfen und erklären können sowie Hilfsmit
 und externe Quellen gemäss Kursvorgaben angeben. Eine Bewertung von 3–4 Punkten
 wird angestrebt, ist aber nicht zugesichert.
 
-### Geprüfter Stand und verbleibende Aufgaben
+### Geprüfter Abschlussstand
 
 - [x] Quelle, Snapshot und Lebenszyklus dokumentiert.
 - [x] Datenprofil, Bereinigung, SQLite und Pipeline ausgeführt.
 - [x] F1–F3 beantwortet; H1/H2 mit Effektgrössen und Grenzen dokumentiert.
 - [x] 43 Tests erfolgreich; Ruff ohne Beanstandungen; beide Notebooks ausgeführt.
 - [x] Referenzversionen festgehalten und Standardablauf in frischer Umgebung geprüft.
-- [ ] Teamreview: Forschungsfragen, Methoden, SQL und Ergebnisgrenzen gemeinsam erklären.
-- [ ] Alle vorgesehenen Abgabedateien in Git aufnehmen und den Diff prüfen.
-- [ ] Präsentation erstellen – nach Dokumentations- und Technikreview.
-- [ ] Abschliessenden Stand prüfen und separaten GitHub-Abgabe-Branch einfrieren.
+- [x] Abschlussprüfung: isolierter Pipeline-/Notebook-Neulauf reproduziert die Ergebnisse.
+- [x] PowerPoint mit Notizen und PDF erstellt, in Microsoft PowerPoint gerendert und geprüft.
+- [x] Aufgabenabgleich und Dateiprüfsummen unter `docs/` dokumentiert.
+- [ ] Persönliche Vorbereitung: Forschungsfragen, Methoden, SQL und Grenzen erklären können.
+- [ ] Allfälligen Kursplattform-Upload bzw. Abgabelink durch das Team einreichen.
 
-Aktuell liegen Änderungen und neue Dateien im Arbeitsbaum; ein lokales Artefakt
-ist erst nach Aufnahme und Commit Bestandteil des Git-Abgabestands. Ein Review
-erfolgt mit `git status --short` und `git diff`. Aktueller Arbeitsbranch ist
-`feature/accident-data`; er ist noch kein eingefrorener Abgabe-Branch.
-Binäre Datenbanken und Notebooks nicht gleichzeitig durch mehrere Personen
-bearbeiten. Zuständigkeiten vergeben und abgeleitete Dateien kontrolliert erzeugen.
+Der finale Git-Stand wird auf **`abgabe/teil1`** gesichert; dieser Branch wird nach
+dem Abschluss-Push als eingefrorener Teil-1-Stand behandelt. Der genaue Commit
+ist in GitHub sichtbar. Das ist keine administrative Schreibsperre. Weitere
+Entwicklung erfolgt auf einem separaten Branch. Abschlussnachweise und
+Abgabeumfang: [Abgabeübersicht](docs/abgabe_teil1.md).
 
 Abgabe laut Projektvorgaben: Teil 1 **27. Oktober 2026, 23:59 Uhr**;
 Teil 2 **8. Dezember 2026, 23:59 Uhr**. Code, Daten, Datenbank und Präsentation
 gehören auf den separaten Abgabe-Branch. Nach dem Einfrieren keine neuen Quellenstände
 oder Pipeline-Läufe in diesen Stand übernehmen. Finaler Lebenszyklus,
 Transformation Teil 2 und Serving werden separat in Teil 2 bewertet.
+
+KI-Unterstützung durch OpenAI Codex / ChatGPT bei Code, Dokumentation, Prüfung und
+Folien ist in der Abgabeübersicht offengelegt. Das Team muss die Entscheidungen
+selbst nachvollziehen und vertreten können; kursspezifische Vorgaben zu
+Hilfsmittelerklärungen gelten zusätzlich.

@@ -3,6 +3,10 @@
 Stand: 13. Oktober 2026. Grundlage: Aufgabenfolie, README, Code, SQL-Schema,
 Raw-/Processed-Artefakte und beide ausgeführten Notebooks.
 
+**Historisches Review vom 13. Oktober:** Die damaligen offenen organisatorischen
+Schritte sind unten im damaligen Stand beschrieben. Den aktuellen Abschlussstand
+mit Präsentation und erneutem Prüflauf dokumentiert [abgabe_teil1.md](abgabe_teil1.md).
+
 ## Urteil und Reichweite
 
 Die Lösung passt zum Teil-1-Umfang: eine begründete lokale Batch-Pipeline,
