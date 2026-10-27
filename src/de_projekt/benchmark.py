@@ -3,15 +3,15 @@
 Der echte Snapshot wird k-fach kopiert; Kopien erhalten neue, eindeutige Unfall-IDs.
 Ingestion, Transformation und Storage laufen unverändert in einem temporären
 Verzeichnis. Der Testsnapshot entsteht vorab; jede Messung läuft in einem eigenen
-Prozess, damit der Spitzenspeicher nur die Pipeline selbst abbildet. Raw und processed bleiben
-unberührt; nur die Messtabelle wird geschrieben.
+Prozess; der Spitzenspeicher umfasst dessen Imports und Verarbeitung. Raw und processed
+bleiben unberührt; nur die Messtabelle wird geschrieben. Die Speichermessung benötigt
+das Unix-Modul resource und ist deshalb auf macOS und Linux beschränkt.
 """
 
 import argparse
 import hashlib
 import json
 import platform
-import resource
 import shutil
 import sqlite3
 import subprocess
@@ -23,6 +23,11 @@ from pathlib import Path
 import pandas as pd
 
 from de_projekt import config, ingestion, storage, transformation
+
+try:
+    import resource
+except ImportError:  # Windows: Datenaufbereitung und Tests bleiben verwendbar.
+    resource = None
 
 RESULT_FILENAME = "scaling_benchmark.csv"
 
@@ -40,7 +45,9 @@ def replicate(raw: pd.DataFrame, factor: int) -> pd.DataFrame:
 
 
 def peak_memory_mb() -> float:
-    """ru_maxrss ist unter macOS in Bytes, unter Linux in Kilobytes."""
+    """Spitzenspeicher in MiB; ru_maxrss liefert Bytes auf macOS, KiB auf Linux."""
+    if resource is None:
+        raise RuntimeError("Die Benchmark-Speichermessung unterstützt nur macOS und Linux.")
     peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
     return peak / 1024**2 if sys.platform == "darwin" else peak / 1024
 
@@ -105,6 +112,8 @@ def main() -> None:
     parser.add_argument("--single", type=int, help=argparse.SUPPRESS)
     parser.add_argument("--workdir", type=Path, help=argparse.SUPPRESS)
     args = parser.parse_args()
+    if resource is None:
+        parser.error("Die Benchmark-Speichermessung unterstützt nur macOS und Linux.")
     if args.single is not None:
         # Kindprozess: genau einen Faktor messen und als JSON an den Elternprozess geben.
         print(json.dumps(measure(args.single, args.workdir)))
