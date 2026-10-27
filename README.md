@@ -12,7 +12,7 @@ Qualitätsprüfung und Aufbereitung, SQLite-Speicherung sowie erste Analysen.
 ## Unterlagen und Projektstruktur
 
 - **[Präsentation](presentations/teil1_verkehrsunfaelle_zuerich.pptx):**
-  15 Hauptfolien für drei Personen mit je fünf Minuten; vier Reservefolien.
+  15 Hauptfolien und vier Reservefolien für die Diskussion.
 - **[Datenprofil](notebooks/01_datenprofil.ipynb):** ausgeführte Prüfung der Rohdaten.
 - **[Analyse](notebooks/02_analyse.ipynb):** SQL-Abfragen, Diagramme, Hypothesentests
   und Antworten auf die Forschungsfragen; ebenfalls ausgeführt.
